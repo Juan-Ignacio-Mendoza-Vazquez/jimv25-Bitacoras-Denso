@@ -1,4 +1,4 @@
-#Instalaciones
+Instalaciones
 
 PHP
 -Ir a la pagina oficial de XAMPP y lo descargamos. https://www.apachefriends.org/es/index.html
@@ -20,12 +20,12 @@ PostgreSQL
 
 Nota: Ejecuta los instaladores como administrador.
 
-#Creacion de un Proyecto en Laravel
+Creacion de un Proyecto en Laravel
 -Creamos una carpeta en donde vamos a guardar el proyecto.
 -Ya creada, abrimos el CMD en esta carpeta y ejecutamos el comando composer create-project laravel/laravel seguido del nombre del proyecto
 -Esperamos hasta que se creen todos los archivos, para comprobarlo abrimos la carpeta con un editor de codigo en mi caso visual code.
 
-#Conexion con PostgreSQL mediante ".env" y levantar el servidor local
+Conexion con PostgreSQL mediante ".env" y levantar el servidor local
 -Antes de ir a la carpeta del proyecto, vamos a la carpeta de XAMPP donde esta el interprete de PHP "C:\xampp\php"
 -Ya en la carpeta abrimos un archivo llamado "php.ini" con un editor de texto para modificarlo y buscamos dos lineas que empiecen con extension.
 -Ubicamos dos lineas que digan: extension=pdo_pgsql y extension=pgsql, si tiene un ";" se lo quitamos para habilitar las extensiones de PostgreSQL, guardamos los cambios y reiniciamos el Apache desde XAMPP.

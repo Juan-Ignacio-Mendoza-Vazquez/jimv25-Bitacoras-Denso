@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
+    <script src="{{ asset('/js/app.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
 </head>
 
@@ -27,7 +28,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/administradores">
+                        <a class="nav-link text-white" href="/registro-visita">
                             <h6><i class="bi bi-person-check me-3"></i>Administradores</h6>
                         </a>
                     </li>
@@ -103,18 +104,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="container-fluid col bg-light text-center">
+            <div class="container-fluid col bg-light text-center sidebar">
                 @yield('content')
             </div>
-            <div class="container-fluid bg-dark">
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top justify-content-center">
-                    <img src="{{ asset('/images/denso-vector-logo.svg') }}" class="img-fluid">
-                    <p class="text-white">© 2025 DENSO, Corporation</p>
+            <div class="container-fluid bg-secondary">
+                <footer class="text-center py-3 mt-4">
+                    <img src="{{ asset('/images/denso-vector-logo.svg') }}" class="img-fluid" style="height: 40px;">
+                    <p class="text-white mb-0">© 2025 DENSO Corporation</p>
                 </footer>
             </div>
         </div>
     </div>
-
 </body>
-
 </html>
+ 

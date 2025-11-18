@@ -22,7 +22,7 @@
                 <td scope="row">Andrea Rosas</td>
                 <td scope="row">Denso Apodaca</td>
                 <td scope="row">Jaqueline Garcia</td>
-                <td scope="row text-bg-primary">Plata Silao</td>
+                <td scope="row"><span class="badge text-bg-primary">Plata Silao</span></td>
                 <td scope="row">--</td>
                 <td scope="row">--</td>
                 <td scope="row">detalles</td>
@@ -32,7 +32,7 @@
                 <td scope="row">Daisy Mairan Solorsano Alvarez</td>
                 <td scope="row">Examen medico</td>
                 <td scope="row">Diego Navarro</td>
-                <td scope="row text-bg-primary">Plata Apodaca</td>
+                <td scope="row text-bg-primary"><span class="badge text-bg-primary">Plata Apodaca</span></td>
                 <td scope="row">Sep 22, 2025 - 10:36 AM</td>
                 <td scope="row">--</td>
                 <td scope="row">detalles</td>

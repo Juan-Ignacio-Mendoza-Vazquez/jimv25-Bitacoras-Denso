@@ -20,3 +20,17 @@
 .sidebar::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0);
 }
+.sidebar {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  padding: 8px 15px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+}

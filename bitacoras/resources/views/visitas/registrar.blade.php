@@ -49,7 +49,10 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 text-start">
+                <a href="{{ route('visitas.index') }}" class="btn btn-outline-secondary mt-3">Volver</a>
+            </div>
+            <div class="col-md-6 mb-3 text-end">
                 <button type="submit" class="btn btn-outline-danger">Registrar</button>
             </div>
         </form>

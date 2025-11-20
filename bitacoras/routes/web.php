@@ -17,4 +17,6 @@ Route::get('/denso', function(){
     return view('registrarvisita');
 });*/
 Route::get('/registro-visita',[VisitaController::class, 'create'])->name('visitas.create');
-Route::post('/registro-visita', [VisitaController::class, 'store'])->name('visitas.store');
+Route::get('/visitas',[VisitaController::class, 'index'])->name('visitas.index');
+Route::post('/visitas', [VisitaController::class, 'store'])->name('visitas.store');
+Route::get('/visitas/{visita}', [VisitaController::class, 'show'])->name('visitas.show');

@@ -8,27 +8,27 @@
     <title>DENSO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
-    <script src="{{ asset('/js/app.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-auto bg-danger sidebar">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link text-white text-center" href="/denso">
+            <div class="col-md-auto bg-danger sidebar vh-100 p-0">
+                <ul class="nav flex-column p-0 m-0">
+                    <li class="nav-item text-center py-3 border-bottom border-light">
+                        <a class="nav-link text-white" href="/denso">
                             <h6><img src="{{ asset('/images/denso-vector-logo.svg') }}" class="img-fluid"><br>Denso
-                                <hr class="border border-light border-1 opacity-100">
+                                
                             </h6>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/registro-visita">
+                        <a class="nav-link text-white" href="{{ route('visitas.index') }}">
                             <h6><i class="bi bi-person-check me-3"></i>Administradores</h6>
                         </a>
                     </li>
@@ -104,17 +104,22 @@
                     </li>
                 </ul>
             </div>
-            <div class="container-fluid col bg-light text-center sidebar">
-                @yield('content')
-            </div>
-            <div class="container-fluid bg-secondary">
-                <footer class="text-center py-3 mt-4">
+            <div class="col d-flex flex-column vh-100 p-0 text-center">
+
+                <!-- CONTENIDO -->
+                <main class="flex-fill overflow-auto p-4">
+                    @yield('content')
+                </main>
+
+                <!-- FOOTER -->
+                <footer class="bg-secondary text-center py-3">
                     <img src="{{ asset('/images/denso-vector-logo.svg') }}" class="img-fluid" style="height: 40px;">
                     <p class="text-white mb-0">© 2025 DENSO Corporation</p>
                 </footer>
+
             </div>
         </div>
     </div>
 </body>
+
 </html>
- 

@@ -32,6 +32,7 @@ class VisitaController extends Controller
         Visita::create($data);
 
         return back()->with('success', 'Visita registrada correctamente.');
+        return view('visitas.index', compact('visitas'));
     }
     public function show(Visita $visita)
     {

@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="display-1">Detalles de la visita</h1>
+    <h1 class="display-1">Detalles</h1>
     <br>
 
-    <div class="container">
+    <div class="container text-start">
 
         <ul class="list-group">
             <li class="list-group-item"><strong>Nombre:</strong> {{ $visita->name }}</li>
@@ -18,6 +18,6 @@
         </ul>
 
         <a href="{{ route('visitas.index') }}" class="btn btn-secondary mt-3">Volver</a>
-
+ 
     </div>
 @endsection
